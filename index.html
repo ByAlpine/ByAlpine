@@ -71,6 +71,10 @@
             <source src="sarki.mp3" type="audio/mpeg">
             Tarayıcınız ses etiketini desteklemiyor.
         </audio> -->
+        <button class="surprise-btn" onclick="togglePhoto()">Fotoğrafı Göster</button>
+        <div id="photo-container" style="display:none; text-align:center; margin-top:20px;">
+            <img src="benim-ve-esim.jpg" alt="Eşimle Fotoğrafım" style="max-width:100%; border-radius:12px; box-shadow:0 2px 16px #f8bbd0;">
+        </div>
         <div class="footer">
             &copy; 2025 Sevgiyle hazırlandı.
         </div>
@@ -78,6 +82,14 @@
     <script>
         function showSurprise() {
             document.getElementById('surprise').style.display = 'block';
+        }
+        function togglePhoto() {
+            var photo = document.getElementById('photo-container');
+            if (photo.style.display === "none") {
+                photo.style.display = "block";
+            } else {
+                photo.style.display = "none";
+            }
         }
     </script>
 </body>
