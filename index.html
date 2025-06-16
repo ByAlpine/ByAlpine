@@ -34,3 +34,87 @@
     </div>
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Karım İçin Özel Site</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #fff0f6; color: #333; margin: 0; padding: 0; }
+        .container { max-width: 600px; margin: 40px auto; background: #fff; border-radius: 16px; box-shadow: 0 2px 16px #f8bbd0; padding: 32px; }
+        h1 { color: #d81b60; text-align: center; }
+        .heart { color: #d81b60; font-size: 2em; text-align: center; animation: pulse 1.2s infinite; }
+        @keyframes pulse {
+            0% { transform: scale(1);}
+            50% { transform: scale(1.2);}
+            100% { transform: scale(1);}
+        }
+        .poem { margin: 32px 0; font-style: italic; background: #fce4ec; border-radius: 8px; padding: 16px; }
+        .footer { text-align: center; margin-top: 32px; color: #888; }
+        .welcome { text-align: center; font-size: 1.2em; margin-bottom: 20px; color: #ad1457; }
+        .surprise-btn {
+            display: block;
+            margin: 0 auto 20px auto;
+            padding: 12px 28px;
+            background: #d81b60;
+            color: #fff;
+            border: none;
+            border-radius: 24px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .surprise-btn:hover {
+            background: #ad1457;
+        }
+        .surprise-message {
+            display: none;
+            text-align: center;
+            margin-top: 20px;
+            color: #d81b60;
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+        audio {
+            display: block;
+            margin: 24px auto 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="heart">❤️</div>
+        <div class="welcome">Hoş geldin, biricik eşim! Bu site sadece sana özel hazırlandı.</div>
+        <h1>Eşime Kalpten Sevgiler</h1>
+        <p>Senin gülüşünle aydınlanan kocan olarak, sana sahip olduğum için çok şanslıyım.<br>
+        Varlığın, iyiliğin ve sevginle hayatıma güzellik kattın.<br>
+        Her zaman yanında, her zaman destekçin olacağım. İyi ki varsın, iyi ki karımsın!</p>
+        <div class="poem">
+            "Senin gülen gözlerinde huzur buldum,<br>
+            Her bakışında sevgiyi, umudu, iyiliği gördüm.<br>
+            Bitanem, sen bana neşe ve huzur getirdin,<br>
+            Varlığınla hayatımı daha anlamlı kıldın.<br><br>
+            Her zaman yanında, her zaman destekçin olacağım.<br>
+            Senin mutluluğun, bizim mutluluğumuz.<br>
+            İyi ki varsın, iyi ki benimsin."
+        </div>
+        <button class="surprise-btn" onclick="showSurprise()">Sürpriz Mesaj</button>
+        <div class="surprise-message" id="surprise">
+            Seni her şeyden çok seviyorum! 💖
+        </div>
+        <!-- Eğer mp3 dosyan varsa aşağıdaki satırdaki src kısmını kendi dosya adınla değiştir -->
+        <!-- <audio controls>
+            <source src="sarki.mp3" type="audio/mpeg">
+            Tarayıcınız ses etiketini desteklemiyor.
+        </audio> -->
+        <div class="footer">
+            &copy; 2025 Sevgiyle hazırlandı.
+        </div>
+    </div>
+    <script>
+        function showSurprise() {
+            document.getElementById('surprise').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
