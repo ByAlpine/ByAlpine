@@ -47,6 +47,7 @@
 </head>
 <body>
     <div class="container">
+        <audio id="bg-music" src="muzik.mp3" autoplay loop hidden></audio>
         <div class="heart">❤️</div>
         <div class="welcome">Hoş geldin, biricik eşim! Bu site sadece sana özel hazırlandı.</div>
         <h1>Eşime Kalpten Sevgiler</h1>
@@ -62,6 +63,7 @@
             Senin mutluluğun, bizim mutluluğumuz.<br>
             İyi ki varsın, iyi ki benimsin."
         </div>
+        <button class="surprise-btn" onclick="document.getElementById('bg-music').play()">Müziği Başlat</button>
         <button class="surprise-btn" onclick="showSurprise()">Sürpriz Mesaj</button>
         <div class="surprise-message" id="surprise">
             Seni her şeyden çok seviyorum! 💖
